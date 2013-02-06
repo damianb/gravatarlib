@@ -95,9 +95,9 @@ class Gravatar
 
 		$this->size = (int) $size;
 
-		if($this->size > 512 || $this->size < 0)
+		if($this->size > 2048 || $this->size < 0)
 		{
-			throw new InvalidArgumentException('Avatar size must be within 0 pixels and 512 pixels');
+			throw new InvalidArgumentException('Avatar size must be within 0 pixels and 2048 pixels');
 		}
 
 		return $this;
